@@ -12,4 +12,14 @@ public class ValidacaoUtil {
             throw new IllegalArgumentException("O valor não pode ser nulo ou vazio!");
         }
     }
+
+    /**
+     *  Verifica se o ano digitado está entre 0 e 2025
+     * @param ano
+     */
+    public void validacaoAno(int ano){
+        if(ano < 0 && ano > 2025){
+            throw new IllegalArgumentException("O numero digirado está incorreto.");
+        }
+    }
 }

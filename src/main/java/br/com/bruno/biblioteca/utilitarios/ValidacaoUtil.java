@@ -22,4 +22,9 @@ public class ValidacaoUtil {
             throw new IllegalArgumentException("O numero digirado está incorreto.");
         }
     }
+
+    public boolean validacaoId(int id){
+        boolean condicao =  id < 2000 && id > 0001;
+        return condicao;
+    }
 }

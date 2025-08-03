@@ -4,13 +4,13 @@ import br.com.bruno.biblioteca.utilitarios.ValidacaoUtil;
 
 public class Livro {
     ValidacaoUtil valida;
-    Membro membro;
+
 
     private String titulo;
     private String autor;
     private String isbn;
     private int anoPublicacao;
-    private boolean disponivel;
+
 
 
 
@@ -54,7 +54,4 @@ public class Livro {
         this.anoPublicacao = ano;
     }
 
-//    public boolean isDisponivel(){
-//        return this.membro == null;
-//    }
 }

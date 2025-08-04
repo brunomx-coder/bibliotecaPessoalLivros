@@ -8,15 +8,16 @@ public class Membro {
         private String nome;
         private int id;
 
-        public Membro(){
-
+        public Membro(String nome, int id){
+            this.setNome(nome);
+            this.setId(id);
         }
 
         public String getNome(){
             return this.nome;
         }
 
-        public void setNome(String nome){
+        private void setNome(String nome){
             valida.isNullOrEmpty(nome);
             this.nome = nome.trim();
         }
@@ -25,7 +26,7 @@ public class Membro {
             return this.id;
         }
 
-        public void setId(int id){
+        private void setId(int id){
             valida.validacaoId(id);
             this.id = id;
         }

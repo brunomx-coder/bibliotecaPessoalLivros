@@ -57,7 +57,7 @@ public class Livro {
     @Override
     public String toString() {
         String mensagem = "Titulo: " + this.titulo + "\nAutor: " + this.autor + "\nIsbn: " + this.isbn +
-                "\nAno de publicação" + this.anoPublicacao;
+                "\nAno de publicação: " + this.anoPublicacao;
         return mensagem;
     }
 }

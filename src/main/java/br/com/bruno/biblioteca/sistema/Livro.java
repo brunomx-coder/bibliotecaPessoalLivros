@@ -3,7 +3,7 @@ package br.com.bruno.biblioteca.sistema;
 import br.com.bruno.biblioteca.utilitarios.ValidacaoUtil;
 
 public class Livro {
-    ValidacaoUtil valida;
+    ValidacaoUtil valida = new ValidacaoUtil();
 
 
     private String titulo;
@@ -40,7 +40,7 @@ public class Livro {
         return this.isbn;
     }
 
-    public void setIsbn(String isbn){
+    private void setIsbn(String isbn){
         valida.isNullOrEmpty(isbn);
         this.isbn = isbn.trim();
     }

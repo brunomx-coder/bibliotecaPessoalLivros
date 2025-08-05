@@ -3,7 +3,7 @@ package br.com.bruno.biblioteca.sistema;
 import br.com.bruno.biblioteca.utilitarios.ValidacaoUtil;
 
 public class Membro {
-        ValidacaoUtil valida;
+        ValidacaoUtil valida = new ValidacaoUtil();
 
         private String nome;
         private int id;

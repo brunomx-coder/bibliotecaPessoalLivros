@@ -30,4 +30,10 @@ public class Membro {
             valida.validacaoId(id);
             this.id = id;
         }
+
+    @Override
+    public String toString() {
+        String mensagem = "Nome: " + this.getNome() + "\nId: " + this.getId();
+        return mensagem;
+    }
 }

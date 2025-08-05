@@ -22,7 +22,7 @@ public class Membro {
             this.nome = nome.trim();
         }
 
-        public int id(){
+        public int getId(){
             return this.id;
         }
 

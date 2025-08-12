@@ -1,5 +1,10 @@
 package br.com.bruno.biblioteca.utilitarios;
 
+import br.com.bruno.biblioteca.sistema.Biblioteca;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class ValidacaoUtil {
 
     /**
@@ -26,5 +31,9 @@ public class ValidacaoUtil {
     public boolean validacaoId(int id){
         boolean condicao =  id < 2000 && id > 0001;
         return condicao;
+    }
+
+    public boolean validaPrateleira(List<?> prateleira){
+        return prateleira.isEmpty();
     }
 }

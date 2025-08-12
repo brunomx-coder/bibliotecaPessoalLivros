@@ -14,8 +14,11 @@ public class Livro {
 
 
 
-    public Livro(String isbn){
+    public Livro(String isbn, String titulo, String autor, int ano){
         this.setIsbn(isbn);
+        this.setTitulo(titulo);
+        this.setAutor(autor);
+        this.setAnoPublicacao(ano);
     }
 
     public String getTitulo(){

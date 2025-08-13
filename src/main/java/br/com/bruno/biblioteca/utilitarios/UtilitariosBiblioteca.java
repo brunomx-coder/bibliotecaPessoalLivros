@@ -20,6 +20,7 @@ public class UtilitariosBiblioteca {
         autor = input.nextLine();
         System.out.println("Insira o ano de publicação: ");
         ano = input.nextInt();
+        input.nextLine();
 
         return new Livro(isbn, titulo, autor, ano);
     }

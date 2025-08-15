@@ -8,7 +8,7 @@ public class Membro {
         private String nome;
         static private int id = 0;
 
-        public Membro(String nome, int id){
+        public Membro(String nome){
             this.setNome(nome);
             this.id +=1;
         }

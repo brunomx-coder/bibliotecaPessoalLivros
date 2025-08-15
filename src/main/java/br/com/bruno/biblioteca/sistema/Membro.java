@@ -6,11 +6,11 @@ public class Membro {
         ValidacaoUtil valida = new ValidacaoUtil();
 
         private String nome;
-        private int id;
+        static private int id = 0;
 
         public Membro(String nome, int id){
             this.setNome(nome);
-            this.setId(id);
+            this.id +=1;
         }
 
         public String getNome(){
@@ -24,11 +24,6 @@ public class Membro {
 
         public int getId(){
             return this.id;
-        }
-
-        private void setId(int id){
-            valida.validacaoId(id);
-            this.id = id;
         }
 
     @Override

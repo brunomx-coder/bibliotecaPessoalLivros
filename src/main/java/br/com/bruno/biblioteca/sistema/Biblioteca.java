@@ -146,4 +146,17 @@ public class Biblioteca extends UtilitariosBiblioteca{
 
     }
 
+    public void removerLivro(String isbn){
+        livroAtual = buscarPorIsbn(isbn);
+        if(livroAtual == null){
+            System.out.println("O livro não foi encontrado!");
+        }
+
+        if(prateleira.remove(livroAtual)){
+            System.out.println("Livro removido com sucesso.");
+        }else{
+            System.out.println("Livro não encontrado na prateleira.");
+        }
+    }
+
 }

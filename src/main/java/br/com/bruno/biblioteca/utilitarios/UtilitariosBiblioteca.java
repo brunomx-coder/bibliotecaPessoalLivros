@@ -1,6 +1,7 @@
 package br.com.bruno.biblioteca.utilitarios;
 
 import br.com.bruno.biblioteca.sistema.Livro;
+import br.com.bruno.biblioteca.sistema.Membro;
 
 import java.util.Scanner;
 
@@ -23,5 +24,15 @@ public class UtilitariosBiblioteca {
         input.nextLine();
 
         return new Livro(isbn, titulo, autor, ano);
+    }
+
+    public Membro infoCadastroMembro(){
+        String nome;
+
+        System.out.println("Cadastro membro!");
+        System.out.println("Insira o nome do membro: ");
+        nome = input.nextLine();
+
+        return new Membro(nome);
     }
 }

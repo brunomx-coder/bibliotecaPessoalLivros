@@ -30,7 +30,10 @@ public class Emprestimo {
     public void setDevolucao(Livro livro){
         if(this.emprestimos.containsKey(livro)){
             this.emprestimos.remove(livro);
+        }else{
+            System.out.println("Sem registro de empréstimo.");
         }
+
     }
 
     @Override
